@@ -3,7 +3,10 @@ import { flowers } from "../model/flowers.mjs";
 
 const route = express.Router();
 
-route.get("/", async (req, res) => {});
+route.get("/", async (req, res) => {
+  const flower = await flowers.find();
+  res.send(flower);
+});
 
 route.post("/", async (req, res) => {
   try {

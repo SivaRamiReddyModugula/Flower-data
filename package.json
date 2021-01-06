@@ -4,7 +4,7 @@
   "description": "Flowers Data.",
   "main": "index.mjs",
   "scripts": {
-    "devstart": "nodemon --experimental-modules index.mjs",
+    "dev": "nodemon --experimental-modules index.mjs",
     "start": "node index.mjs"
   },
   "author": "Siva Rami Reddy",
